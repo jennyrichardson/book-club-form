@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<link href="css/general.css" rel="stylesheet"
+</head>
+<body>
+
+<h1><center>Horror Fanatic Book Club</center></h1>
+
+<div id="box-shadow">
+	<div class="box">
+<center><img src="images/horror-books.png"  class="flex-img" alt="Photos of Horror Books"></center>
+<p>To become a part of our Horror Fanatic Book Club please fill out and submit the application form below.</p>
+
+<form>
+	<div>
+		<label for="name">
+			Name
+			<strong class="error">Please fill in your name</strong>
+			</label>
+		<input type="text" id="name" class="input-text input-error" required>
+	</div>
+	
+	<div>
+		<label for="email">E-mail Address</label>
+		<input type="email" id="email" class="input-text" maxlength="256" required>
+	</div>
+	
+	<div>
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" class="input-text" maxlength="20" minlength="10">
+	</div>
+
+	<div>
+		<label for="address">
+		Address
+		<strong class="error">Please fill in your address</strong>
+		</label>
+		<input type="text" id="address" class="input-text input-error" required>
+	</div>
+	
+	<div>
+		<label for="city">City</label>
+		<input type="text" id="city" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="province">Province</label>
+		<select id="province" required>
+			<option></option>
+			<option>Alberta</option>
+			<option>British Columbia</option>
+			<option>Manitoba</option>
+			<option>New Brunswick</option>
+			<option>Newfoundland and Labrador</option>
+			<option>Northwest Territories</option>
+			<option>Nova Scotia</option>
+			<option>Nunavut</option>
+			<option selected>Ontario</option>
+			<option>Prince Edward Island</option>
+			<option>Quebec</option>
+			<option>Saskatchewan</option>
+			<option>Yukon Territory</option>
+			</select>
+	</div>
+	
+	<div>
+		<label for="postal">Postal Code</label>
+		<input type="text" id="postal" class="input-text" maxlength="7" required>
+	</div>
+	
+	<div>
+		<label for="time">What time of day would be best to meet?</label>
+		<input type="time" id="time" required>
+	</div>
+	
+	<div>
+		<label for="number">How many books have you read this year?</label>
+		<input type="number" id="number" patterm="[0-9]*" min="1">
+	</div>
+	
+	<div>
+		<label for="why">Describe your favourite book & author</label>
+		<textarea for="why" class="input-text"></textarea>
+	</div>
+	
+	<fieldset>
+		<legend>How much do you love this genre?</legend>
+		
+		<input type="radio" id="extreme-poor" name="satisfaction">
+		<label for="extreme-poor">I don't</label>
+		
+		<input type="radio" id="dissatisfied" name="satisfaction">
+		<label for="dissatisfied">Very little </label>
+		
+		<input type="radio" id="neutral" name="satisfaction">
+		<label for="neutral">Neutral</label>
+		
+		<input type="radio" id="satisfied" name="satisfaction">
+		<label for="satisfied">It's okay</label>
+		
+		<input type="radio" id="extreme-good" name="satisfaction">
+		<label for="extreme-good">I love it a lot!</label>
+	</fieldset>
+	
+	<button type="submit">Submit</button>
+	
+</form>
+	</div>
+</div>
+
+
+</body>
+</html>

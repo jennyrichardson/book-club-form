@@ -1,0 +1,117 @@
+body {
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 5em;
+	font-family:"Feast of Flesh BB";
+	color: #000;
+	background-color: #F00;
+}
+
+.flex-img {
+	width: 100%;
+} 
+
+@media only screen and (max-width: 35em) {
+	
+	.flex-img {
+		display: none;
+	}
+}
+
+.box {
+background-color: #FFF;
+padding: 20px;
+margin: 4% 10% 4% 10%;
+moz-box-shadow: 0 0 5px #ACACAC;
+webkit-box-shadow: 0 0 5px #ACACAC;
+box-shadow: 0 0 5px #ACACAC;
+}
+
+* {
+	padding: 5px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input + label {
+	display: inline;
+}
+
+input {
+	font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+.input-text {
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	padding: 0.5em;
+	background-image: linear-gradient(to bottom, #efefef, #fff);
+	border-radius: 2px;
+	width:100%;
+}
+
+textarea {
+	max-width:100%;
+	height: 7em;
+}
+
+button {
+	margin: 50px 5px 5px 5px;
+	font-size: 1rem;
+	padding: 0.5em;
+	border-radius: 8px;
+	color: #F00;
+	cursor: pointer;
+}
+
+.error {
+
+	color: #f33;
+	display: block;
+}
+
+.input-error {
+	 border: 3px solid #f33;
+}
+
+@media only screen and (max-width: 47em) {
+	
+	body {
+		font-size: 0.8em;
+	}
+	
+	* {
+	padding: 2px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+	textarea {
+	max-width:100%;
+	height: 4em;
+	}
+
+
+	.input-text {
+	font-size: 0.8rem;
+	border: 1px solid #ccc;
+	padding: 0.5em;
+	background-image: linear-gradient(to bottom, #efefef, #fff);
+	border-radius: 2px;
+	width:100%;
+	}
+}
